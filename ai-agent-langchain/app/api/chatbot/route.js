@@ -30,7 +30,6 @@ export async function POST(req) {
     const {
       prompt: userPrompt,
       thread_id,
-      max_tokens_per_message = 100,
       max_total_tokens = 1300,
       memory_window = 5,
     } = body;

@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Email Assistant Chatbot
 
-First, run the development server:
+This project is an **AI-powered email assistant chatbot** built using **Next.js**, **Axios**, **Tailwind CSS**, and **Langchain**. The chatbot can help you send emails just by chatting with it. It leverages the **Llama model** and **Group API** to process requests and send emails based on your commands.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Live Demo
+**URL:** https://ai-agent-langchain.onrender.com/
+# Main Screen
+![Image](https://github.com/user-attachments/assets/6470293a-014f-48b5-9cde-761b7ab205d0)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Send emails via chat**: Interact with the chatbot to compose and send emails.
+- **AI-driven**: Utilizes Langchain to create an intelligent agent for managing email communication.
+- **Clean UI**: Tailwind CSS is used for styling to ensure a smooth user experience.
+- **Seamless email sending**: Axios is used to make API requests for sending emails.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tools and Technologies Used
 
-## Learn More
+- **Next.js**: A React framework for building the application.
+- **Axios**: For making HTTP requests to send emails via the Group API.
+- **Tailwind CSS**: A utility-first CSS framework for fast styling.
+- **Llama Model**: For natural language processing and AI-driven responses.
+- **Langchain**: Used for creating an AI agent that can understand and process email-related tasks.
 
-To learn more about Next.js, take a look at the following resources:
+## Setup and Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Node.js** (v14 or later)
+2. **NPM** or **Yarn** for package management
+3. **API Keys** for email sending (Group API or your email provider)
 
-## Deploy on Vercel
+### Installation Steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/your-username/email-assistant-chatbot.git
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Navigate into the project directory:
+    ```bash
+    cd email-assistant-chatbot
+    ```
+
+3. Install dependencies:
+    ```bash
+    npm install
+    # or if you use yarn
+    yarn install
+    ```
+
+4. Set up your API keys:
+    - Create a `.env.local` file in the root of your project.
+    - Add your API credentials like so:
+      ```bash
+      EMAIL_API_KEY=your_email_api_key
+      GROUP_API_KEY=your_group_api_key
+      ```
+
+5. Start the development server:
+    ```bash
+    npm run dev
+    # or if you use yarn
+    yarn dev
+    ```
+
+6. Navigate to `http://localhost:3000` to interact with the chatbot.
+
+## How to Use
+
+- Open the application in your browser.
+- Chat with the assistant by typing your email content.
+- The AI will process your input and prepare the email for sending.
+- Once you're satisfied with the email, simply confirm, and the email will be sent to the desired recipient.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- **Langchain**: For providing a framework to build powerful AI agents.
+- **Llama Model**: For natural language processing and intelligent interactions.
+- **Group API**: For email sending functionality.
+
+---
+
+Feel free to open an issue or reach out if you encounter any problems!
